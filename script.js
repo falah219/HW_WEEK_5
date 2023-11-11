@@ -80,17 +80,17 @@ function submitForm(e) {
     const uangsangu = parseInt(document.getElementById("uangsangu").value);
 
     if (nama.length < 10) {
-        alert("Harap isi form nama dengan benar!");
+        alert("Harap isi form nama dengan benar!, minimal nama harus 10 karakter");
         return;
     }
 
-    else if(umur < 25){
-        alert("Harap isi form umur dengan benar!");
+    else if(umur <= 25){
+        alert("Harap isi form umur dengan benar!, minimal umur harus 25");
         return;
     }
 
     else if(uangsangu < 100000 || uangsangu > 1000000){
-        alert("Harap isi form uang sangu dengan benar!");
+        alert("Harap isi form uang sangu dengan benar!, minimal harus 100000 dan maksial harus 1000000");
         return;
     }
 
