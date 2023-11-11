@@ -84,7 +84,7 @@ function submitForm(e) {
         return;
     }
 
-    else if(umur <= 25){
+    else if(umur < 25){
         alert("Harap isi form umur dengan benar!, minimal umur harus 25");
         return;
     }
